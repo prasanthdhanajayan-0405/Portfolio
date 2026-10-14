@@ -918,21 +918,25 @@
                             <h3 class="text-2xl font-bold font-tech text-white mb-2">Contact Details</h3>
                             <p class="text-xs text-slate-300 mb-6">Looking for a Product Specialist who drives revenue, manages complex B2B SaaS lifecycles, and deeply understands customer needs? Let's connect.</p>
 
-                            <form onsubmit="showToast('Message sent! Prasanth will respond shortly.', 'success'); event.preventDefault(); event.target.reset();" class="space-y-4 text-xs">
+                            <form action="https://formsubmit.co/prasanthdhanajayan@gmail.com" method="POST" class="space-y-4 text-xs">
+                                <!-- FormSubmit Config -->
+                                <input type="hidden" name="_subject" value="New PM Portfolio Lead / Inquiry for Prasanth!">
+                                <input type="hidden" name="_captcha" value="false">
+                                
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>
                                         <label class="block font-mono text-slate-400 mb-1">YOUR NAME</label>
-                                        <input type="text" required class="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-400 transition-all" placeholder="Jane Doe">
+                                        <input type="text" name="name" required class="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-400 transition-all" placeholder="Jane Doe">
                                     </div>
                                     <div>
                                         <label class="block font-mono text-slate-400 mb-1">YOUR EMAIL</label>
-                                        <input type="email" required class="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-400 transition-all" placeholder="jane@company.com">
+                                        <input type="email" name="email" required class="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-400 transition-all" placeholder="jane@company.com">
                                     </div>
                                 </div>
 
                                 <div>
                                     <label class="block font-mono text-slate-400 mb-1">MESSAGE / OPPORTUNITY DETAILS</label>
-                                    <textarea rows="4" required class="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-400 transition-all" placeholder="Hi Prasanth, we are looking for a Product Specialist to join our team..."></textarea>
+                                    <textarea name="message" rows="4" required class="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-400 transition-all" placeholder="Hi Prasanth, we are looking for a Product Specialist to join our team..."></textarea>
                                 </div>
 
                                 <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-amber-500 hover:from-cyan-400 hover:to-amber-400 text-slate-950 font-tech font-bold text-xs tracking-wider transition-all shadow-lg">
